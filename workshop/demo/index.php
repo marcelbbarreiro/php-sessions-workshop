@@ -42,8 +42,8 @@ $alert = checkSession();
 
   <main class="form-signin">
     <form action="./modules/login.php" method="POST">
-      <img src="../../assets/img/assembler_icon.jfif" width="40" height="40" class="me-3" alt="Assembler School">
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <img src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-5.png"  width="300" class="me-3" alt="Logo Netflix">
+      <h1 class="h3 mb-3 fw-normal" style="color: whitesmoke;">Please sign in</h1>
 
       <div class="form-floating">
         <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" data-bs-toggle="tooltip" data-bs-html="true" title="imassembler@assemblerschool.com">

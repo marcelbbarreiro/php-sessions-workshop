@@ -8,7 +8,7 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #f5f5f5;
+  background-color: #121315;
 }
 
 .form-signin {
@@ -36,4 +36,16 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.btn-primary {
+  color: #f4f4f4;
+  background-color: #e50914;
+  border-color: #e50914
+}
+
+.btn-primary:hover {
+  color: #f4f4f4;
+  background-color: #cf000ad4;
+  border-color: #cf000ad4
 }

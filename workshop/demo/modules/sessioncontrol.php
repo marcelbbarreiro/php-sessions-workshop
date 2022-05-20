@@ -70,8 +70,8 @@ function authUser()
 
 function checkUser(string $email, string $pass)
 {
-    $emailDb = "imassembler@assemblerschool.com";
-    $passDb = "Assemb13r";
+    $emailDb = "marcelbarreiro@gmail.com";
+    $passDb = "12345";
 
     // Password must be encrypted in any way
     $passDbEnc = password_hash($passDb, PASSWORD_DEFAULT);
