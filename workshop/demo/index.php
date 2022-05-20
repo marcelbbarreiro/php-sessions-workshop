@@ -1,3 +1,11 @@
+<?php
+require_once("./modules/sessioncontrol.php");
+
+//Check for session and error / info messages
+$alert = checkSession();
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -33,9 +41,9 @@
 <body class="text-center">
 
   <main class="form-signin">
-    <form>
-      <img src="../../assets/img/assembler_icon.jfif" width="40" height="40" class="me-3" alt="Assembler School">
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <form action="./home.php" method="POST">
+      <img src="https://logodownload.org/wp-content/uploads/2014/10/netflix-logo-5.png"  width="300" class="me-3" alt="Logo Netflix">
+      <h1 class="h3 mb-3 fw-normal" style="color: whitesmoke;">Please sign in</h1>
 
       <div class="form-floating">
         <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" data-bs-toggle="tooltip" data-bs-html="true" title="imassembler@assemblerschool.com">
@@ -45,12 +53,12 @@
         <input name="pass" type="password" class="form-control" id="floatingPassword" placeholder="Password" title="Assemb13r">
         <label for="floatingPassword">Password</label>
       </div>
-      <div class='alert alert-primary' role='alert'>Error / Info Message</div>
+      <?= ($alert) ? "<div class='alert alert-$alert[type] role='alert'>$alert[text]</div>" : "" ?>
       <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+      <p class="mt-5 mb-3 text-muted">&copy; 2022 Marcel Barreiro - PHP Login</p>
+
     </form>
   </main>
-
 
   <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
