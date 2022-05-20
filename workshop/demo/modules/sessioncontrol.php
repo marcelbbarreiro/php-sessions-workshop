@@ -5,7 +5,8 @@ function checkSession()
     // Start session
     session_start();
 
-    $urlFile = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']);
+// REQUEST_URI = relative patch // QUERY_STRING = ?
+    $urlFile = basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']); 
 
     if ($urlFile == "index.php" || $urlFile == "demo") {
 
