@@ -32,17 +32,15 @@
   
   /* HEADER */
   header {
-    padding: 20px 20px 0 20px;
+    padding: 15px;
     position: fixed;
-    top: 0;
-    display: grid;  
-    grid-gap:5px;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: 
-     "nt mn mn sb . . . "; 
     background-color: var(--primary);
     width: 100%;
-    margin-bottom: 0px;  
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #404040;
   }
   
   .netflixLogo {
@@ -82,8 +80,9 @@
   }
   
   .sub-nav {
-    grid-area: sb;
-    padding: 0 40px 0 40px;
+    display: flex;
+    padding: 10px;
+    margin-right: 20px;
   }
   
   .sub-nav a {
@@ -93,10 +92,30 @@
   }
   
   .sub-nav a:hover {
-    color: var(--dark);
+    color:#b8b8b8;
   }
-  
-  
+  .profile-icon {
+  background-image: url("https://occ-0-2705-2706.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABQeGHKNMmLwGKq16NvKP6XTkbyBE0_KaWc6JahZksi5Xp6gr44E-3ZwFQcQZHe2MHXsC3FSGxriP29b5UbNP8h-NcuhXvO6kIo9T.png?r=b97");
+  width: 33px;
+  background-size: cover;
+  border-radius: 4px;
+  }
+  .email {
+  font-size: larger;
+  border-left: 1px dashed #e50915;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-right: 1px #e50915 dashed;
+  padding: 0px 3px;
+  }
+  .logout{
+    border-radius: 5px;
+    font-size: large;
+    padding: 0px 5px;
+    border: 2px;
+    border-style: outset;
+    border-color: #e50915;
+  }
   /* MAIN CONTIANER */
   .main-container {
     padding: 50px;

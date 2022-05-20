@@ -10,6 +10,7 @@ checkSession();
   <title>Netflix</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
 
   <script src="main.js"></script>
@@ -28,12 +29,13 @@ checkSession();
         <a href="#movies">Movies</a>
         <a href="#originals">Originals</a>
         <a href="#">Recently Added</a>
-        <a target="_blank" href="https://codepen.io/cb2307/full/NzaOrm">Portfolio</a>        
+        <a target="_blank" href="https://www.linkedin.com/in/marcelbarreiro/">Linkedin</a>
+    
       </nav>
       <nav class="sub-nav">
-        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
-        <a href="#"><?= $_SESSION["email"] ?></a>    
-        <a href="./modules/logout.php"> Logout: <i class="fas fa-sign-out-alt"></i></a>    
+        <div class="profile-icon" data-profile-guid="SUAIQOUXRBHJBOMY3A4RK3EXFI" style=""> </div>
+        <div class="email"><a href="#"><?= $_SESSION["email"] ?></a></div>
+        <div class="logout"><a href="./modules/logout.php"> Logout: <i class="fas fa-sign-out-alt"></i></a></div>
       </nav>      
     </header>
     <!-- END OF HEADER -->
@@ -41,9 +43,9 @@ checkSession();
     <!-- MAIN CONTAINER -->
     <section class="main-container" >
       <div class="location" id="home">
-          <h1 id="home">Popular on Netflix</h1>
+          <h1 id="home">My List</h1>
           <div class="box">
-            <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true" alt=""></a>
+            <a href=""><img src="https://bit.ly/3ltIynD" alt=""></a>
             <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p2.PNG?raw=true" alt=""></a>
             <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p3.PNG?raw=true" alt=""></a>
             <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p4.PNG?raw=true" alt=""></a>
